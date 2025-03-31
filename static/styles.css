@@ -1,0 +1,261 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #1a1a1a;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.content {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff5a5f;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0484e;
+}
+
+/* Image on the Right */
+.image-container img {
+    height: 400px;
+    width: 400px;
+}
+
+/* Color Hues Section */
+.color-hues {
+    background: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.color-hues h2 {
+    font-size: 24px;
+    color: #1b1425;
+}
+
+.color-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 10px 15px;
+    border: 2px solid #1f1235;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #1f1235;
+}
+
+.color-box:hover {
+    background-color: #ff6e6c;
+}
+
+
+.color-box .label {
+    font-weight: bold;
+}
+
+.color-box .hex {
+    display: block;
+    color: #67568c;
+}
+
+/* Color Terminology Section */
+.color-terminology {
+    background: #f5f1ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.terminology-box {
+    background-color: #e5ddea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title img {
+    width: 40px;
+    height: auto;
+}
+
+.title h3 {
+    font-size: 20px;
+    color: #3b2b5f;
+    margin: 0;
+}
+
+p {
+    color: #3b2b5f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.color-psychology {
+    background: #ffffff;
+    padding: 50px 20px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4effc;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    display: flex;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.color-info {
+    flex: 1;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.scrolling-boxes {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.color-box2 {
+    background: #2d133d;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.tag {
+    color: #ff6e6c;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+}
+
+/* Scroll effect for color boxes */
+.scrolling-boxes .color-box {
+    transition: transform 0.3s ease;
+}
+
+.scrolling-boxes .color-box:hover {
+    transform: translateY(-5px);
+}
+
+.boxes {
+    color: #ffffff;
+}
+
+.end-card {
+    background: #2d133d;
+    color: #ffffff;
+    padding: 50px 20px;
+}
