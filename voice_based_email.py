@@ -63,9 +63,9 @@ try:
             print('Your message: {}'.format(text))
             r=recognizer.recognize_google(recieve, language="en-US").lower()
             if 'priya' in r:
-                reciever='tokpriya2020@gmail.com'
+                reciever='PERSON1_WHOM_YOU_MAIL_FREQUENTLY'
             elif 'vaishnavi' in r:
-                reciever='vaishnavi6283@gmail.com'
+                reciever='PERSON2_WHOM_YOU_MAIL_FREQUENTLY'
             else:
                 pass
             print('Message has been sent to... {}'.format(r))
@@ -80,8 +80,8 @@ try:
         print('Your message has been sent successfully')
         speak('Your message has been sent successfully',voice_type)
     elif 'read' in d:
-        FROM_EMAIL = 'abishaeunice123@gmail.com'
-        FROM_PWD='jntk zpch kquo pasc'
+        FROM_EMAIL = 'ENTER_YOUR_EMAIL_ID'
+        FROM_PWD='ENTER_YOUR_PASSWORD'
         SMTP_SERVER = "imap.gmail.com"
         SMTP_PORT = 993
 
@@ -111,11 +111,11 @@ try:
                         recieve=recognizer.listen(source)
                     r=recognizer.recognize_google(recieve, language="en-US").lower()
                     if 'priya' in r:
-                        reciever='tokpriya2020@gmail.com'
+                        reciever='PERSON1_WHOM_YOU_MAIL_FREQUENTLY'
                     elif 'vaishnavi' in r:
-                        reciever='vaishnavi6283@gmail.com'
+                        reciever='PERSON2_WHOM_YOU_MAIL_FREQUENTLY'
                     else:
-                        reciever='tokpriya2020@gmail.com'
+                        reciever='JUST FOR IMPLEMENTATION; REPLACE WITH TRY-CATCH'
                     _,data=mail.search(None,'FROM',reciever)
                  
                 mail_ids= data[0].split()
