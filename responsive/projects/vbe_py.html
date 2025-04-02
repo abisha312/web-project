@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisha's Voice-Based Email System Python</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <h1>Voice-Based Email System: Simplifying Email Communication with Speech Recognition</h1>
+    </header>
+
+    <section class="overview">
+        <h2>Overview</h2>
+        <p>The Voice-Based Email System is a Python-powered application that enables users to send and read emails using voice commands. By integrating speech recognition, text-to-speech synthesis, and email handling, this system enhances accessibility, making email management more intuitive, especially for visually impaired users or those who prefer hands-free interaction.</p>
+    </section>
+
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Speech-Controlled Email Sending 🎤📧</strong> - Users dictate recipient names, subject lines, and email content, which are then transcribed and sent.</li>
+            <li><strong>Voice-Based Email Reading 🗣️📩</strong> - Retrieves emails from the inbox and reads them aloud based on user preference.</li>
+            <li><strong>Interactive Voice Assistance 🤖</strong> - The system guides users through sending or reading emails with voice prompts.</li>
+            <li><strong>Customizable Voice Output 🎙️</strong> - Users can choose between male and female voices.</li>
+            <li><strong>Noise Reduction & Adaptability 🔊</strong> - Filters background noise for improved speech recognition accuracy.</li>
+            <li><strong>AI-Assisted Email Sorting 📂</strong> - Users can request emails from specific senders, making inbox navigation easier.</li>
+        </ul>
+    </section>
+
+    <section class="prototype">
+        <h2>Implementation Demo</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- First Video -->
+                <div class="col-md-6 col-12 mb-4 align-items-center text-center">
+                    <p>Watch how the user can send the mail:</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="300"
+                            src="https://www.youtube.com/embed/QMBk3LGRqPU?si=QxnwhTtTRzVP54Nj" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <button onclick="window.open('https://youtu.be/QMBk3LGRqPU?si=QxnwhTtTRzVP54Nj', '_blank')" 
+                        class="link_button">
+                        Watch SEND MAIL on YouTube
+                    </button>
+                </div>
+    
+                <!-- Second Video -->
+                <div class="col-md-6 col-12 align-items-center text-center ">
+                    <p>Watch how the system reads the recent mails from an individual:</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="300"
+                            src="https://www.youtube.com/embed/Hr4mYpfQ8aU?si=HgkFfPVWV_eq_GF1" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <button onclick="window.open('https://youtu.be/Hr4mYpfQ8aU?si=HgkFfPVWV_eq_GF1', '_blank')" 
+                        class="link_button">
+                        Watch READ MAIL on YouTube
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="source-code">
+        <h2>Source Code</h2>
+        <p>Explore the complete source code of the Voice-Based Email System on GitHub:</p>
+    
+        <!-- GitHub Repository Link -->
+        <a href="https://github.com/abisha312/web-project/blob/main/voice_based_email.py" target="_blank" class="link_button">
+            View Source Code on GitHub
+        </a>
+    </section>
+
+    <section class="design-approach">
+        <h2>System Design & Implementation Approach</h2>
+        <p><strong>1. Seamless Voice-Based User Interaction</strong></p>
+        <p>- Uses <code>SpeechRecognition</code> for transcribing user commands into text.</p>
+        <p>- Implements <code>pyttsx3</code> for converting system responses into speech.</p>
+        <p>- Users follow a guided workflow to either send or read emails, with prompts ensuring clarity.</p>
+
+        <p><strong>2. Efficient Email Handling</strong></p>
+        <p>- <em>Sending Emails:</em> Captures recipient names, subject lines, and message content, then sends via <code>yagmail</code>.</p>
+        <p>- <em>Reading Emails:</em> Connects to <code>Gmail IMAP</code>, retrieves messages, and reads them aloud.</p>
+
+        <p><strong>3. Adaptive Speech Recognition & Noise Handling</strong></p>
+        <p>- Implements <em>ambient noise adjustment</em> for improved recognition.</p>
+        <p>- Uses multiple speech recognition attempts to minimize errors.</p>
+        <p>- Provides real-time feedback and re-prompts if recognition fails.</p>
+    </section>
+
+    <section class="learnings">
+        <h2>Technical Learnings & Challenges</h2>
+        <p><strong>1. Working with Speech Recognition APIs</strong></p>
+        <p>- Implemented <code>Google Speech-to-Text API</code> for accurate voice transcription.</p>
+        <p>- Handled speech errors and misinterpretations using exception handling.</p>
+        <p>- Adjusted for different speech patterns and accents.</p>
+
+        <p><strong>2. Email Automation & Security</strong></p>
+        <p>- Integrated <code>IMAP and SMTP protocols</code> for reading and sending emails.</p>
+        <p>- Managed <em>OAuth-based authentication alternatives</em> for security.</p>
+
+        <p><strong>3. Improving User Experience Through AI Assistance</strong></p>
+        <p>- Developed an interactive flow where the system asks questions based on user intent.</p>
+        <p>- Implemented conditional decision-making to handle different user inputs dynamically.</p>
+
+        <p><strong>4. Handling Real-Time Voice Inputs</strong></p>
+        <p>- Optimized microphone usage to minimize recognition delays.</p>
+        <p>- Implemented background noise suppression for cleaner input processing.</p>
+    </section>
+
+    <footer>
+        <div class="right_align">
+            <button onclick="window.location.href='../main.html#sec_Projects'" class="exit-button">Back to Main</button>
+        </div>
+        <div class="center_align">
+            <p>Created by Abisha Eunice A :)</p>
+        </div>
+    </footer>
+</body>
+</html>

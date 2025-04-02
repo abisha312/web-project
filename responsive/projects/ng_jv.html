@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <h1>Number Guessing Game: A Fun and Interactive Challenge</h1>
+    </header>
+
+    <section class="overview">
+        <h2>Overview</h2>
+        <p>The <strong>Number Guessing Game</strong> is a Java-based console game where players attempt to guess a randomly generated number between 1 and 100. The game provides hints and offers bonus rounds for near guesses, making it both engaging and challenging.</p>
+    </section>
+
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Random Number Generation 🎲</strong> - The game selects a number between 1 and 100.</li>
+            <li><strong>Limited Attempts ⏳</strong> - Players get **three chances**, with bonus rounds for close guesses.</li>
+            <li><strong>Hint System 🔍</strong> - Feedback like **"Too High"** or **"Too Low"** helps refine guesses.</li>
+            <li><strong>Scoring Mechanism 🎯</strong> - Earn **higher points** for quicker correct guesses.</li>
+            <li><strong>Loop-Based Gameplay 🔄</strong> - The player can continue until they choose to exit.</li>
+        </ul>
+    </section>
+
+    <section class="prototype">
+        <h2>Implementation Demo</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+            <div class="video-container col-md-8 col-12 text-center">
+                <p>Watch a demo of the Number Guessing Game:</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="100%" height="300"
+                        src="https://www.youtube.com/embed/uhEaNwBgCgI?si=S2mGlcjpZcWnkcyH" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <button onclick="window.open('https://youtu.be/uhEaNwBgCgI?si=S2mGlcjpZcWnkcyH', '_blank')" class="link_button">
+                    Watch on YouTube
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="source-code">
+        <h2>Source Code</h2>
+        <p>Explore the complete source code of the Number Gussing Game on GitHub:</p>
+    
+        <!-- GitHub Repository Link -->
+        <a href="https://github.com/abisha312/web-project/blob/main/number_game.java" target="_blank" class="link_button">
+            View Source Code on GitHub
+        </a>
+    </section>
+
+    <section class="design-approach">
+        <h2>System Design & Implementation</h2>
+        <p><strong>1. Random Number Generation</strong></p>
+        <p>- Uses <code>Java's Random class</code> to generate a number within the range of 1 to 100.</p>
+
+        <p><strong>2. User Interaction & Guessing Logic</strong></p>
+        <p>- Players input numbers, and the system checks whether the guess is correct, high, or low.</p>
+        <p>- If the guess is within <em>±5</em> of the correct number, bonus rounds are awarded.</p>
+
+        <p><strong>3. Scoring System</strong></p>
+        <p>- Points are awarded based on the number of rounds taken to guess the correct number.</p>
+        <p>- Faster correct guesses earn higher points.</p>
+
+        <p><strong>4. Looping & Replay Option</strong></p>
+        <p>- The game runs in a <em>while loop</em>, allowing players to replay after each round.</p>
+    </section>
+
+    <section class="learnings">
+        <h2>Technical Learnings & Challenges</h2>
+        <p><strong>1. Implementing Randomization</strong></p>
+        <p>- Used <code>Random.nextInt()</code> to generate unpredictable numbers.</p>
+
+        <p><strong>2. Handling User Input</strong></p>
+        <p>- Used <code>Scanner</code> to take numeric inputs and ensure error handling for invalid values.</p>
+
+        <p><strong>3. Game Logic & Scoring System</strong></p>
+        <p>- Designed a <em>balanced scoring system</em> to reward efficiency in guessing.</p>
+
+        <p><strong>4. Loop & Conditional Handling</strong></p>
+        <p>- Ensured smooth user interaction with loops and <em>break conditions</em> for game flow control.</p>
+    </section>
+
+    <footer>
+        <div class="right_align">
+            <button onclick="window.location.href='../main.html#sec_Projects'" class="exit-button">Back to Main</button>
+        </div>
+        <div class="center_align">
+            <p>Created by Abisha Eunice A :)</p>
+        </div>
+    </footer>
+</body>
+</html>
