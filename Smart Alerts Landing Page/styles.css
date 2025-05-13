@@ -1,0 +1,123 @@
+:root {
+    --primary-purple: #5d2497;
+    --secondary-gold: linear-gradient(45deg, #f9d976, #f39f86);
+    --light-lavender: #e8d7f1;
+    --white: #ffffff;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: var(--light-lavender);
+    color: var(--primary-purple);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: var(--primary-purple);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background: var(--secondary-gold);
+    color: var(--primary-purple);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(93, 36, 151, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .hero-image {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(93, 36, 151, 0.3);
+  }
+  
+  .features, .retailers, .download {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--white);
+    margin: 1rem auto;
+    border-radius: 16px;
+    max-width: 960px;
+    box-shadow: 0 4px 10px rgba(93, 36, 151, 0.1);
+  }
+  
+  .features ul, .retailers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li, .retailers li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    background: var(--primary-purple);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .socials a {
+    margin: 0 0.5rem;
+    color: #ffd700;
+  }
+  .faq {
+    padding: 2rem 1rem;
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(93, 36, 151, 0.1);
+  }
+  
+  .faq h2 {
+    text-align: center;
+    color: var(--primary-purple);
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.2rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-purple);
+  }
+  
+  .faq-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
