@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Smart Alerts</string>
+    <string name="first_name_hint_text">First Name</string>
+    <string name="last_name_hint_text">Last Name</string>
+    <string name="user_name_hint_text">Username</string>
+    <string name="email_id_hint_text">Email Id</string>
+    <string name="re_password_hint_text">Retype Password</string>
+    <string name="password_hint_text">Password</string>
+    <string name="contact_hint_text">Contact Number</string>
+    <string name="shop_name_hint_text">Shop Name</string>
+    <string name="address1_hint_text">Address1</string>
+    <string name="address2_hint_text">Address2(opt)</string>
+    <string name="city_hint_text">City</string>
+    <string name="postal_code_hint_text">Postal Code</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="business">Business</string>
+    <string name="customer">Customer</string>
+    <string name="nxt_pg">Next Page</string>
+    <string name="shop_type_hint_text">Shop Type</string>
+    <string name="shop_website_url">Website URL</string>
+    <string name="shop_manager_name_hint_text">Shop Manager Name</string>
+    <string name="shop_contact_hint_text">Shop Contact Number</string>
+    <string name="shop_profile_pic">Shop Profile Picture</string>
+    <string-array name="shop_types">
+        <item>Shop Type</item> <!-- hint -->
+        <item>Food</item>
+        <item>Clothing</item>
+        <item>Accessories</item>
+        <item>FMCG</item>
+    </string-array>
+</resources>

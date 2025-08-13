@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/dash_bg">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_weight="3"
+                android:paddingStart="12dp"
+                android:text="Hello Alice!"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="44dp"
+                android:layout_weight="3"
+                android:paddingStart="12dp"
+                android:text="Choose Your Discount"
+                android:textColor="#000"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="3"
+                android:paddingStart="12dp"
+                android:text="SmartAlerts"
+                android:textColor="#000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="20dp"
+                android:text="⏰ 00:36:58"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="189dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="14"
+                android:text="SMART ALERTS"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Scan"
+                android:onClick="SignOut"
+                android:src="@drawable/exit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="271dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="Scan"
+                android:src="@drawable/search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="682dp"
+            android:contentDescription="Scan"
+            android:src="@drawable/offer"
+            tools:layout_editor_absoluteX="355dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            tools:layout_editor_absoluteY="837dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="3"
+                android:paddingStart="12dp"
+                android:text="Best Deals!!!"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="214dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="68dp"
+                android:contentDescription="Scan"
+                android:src="@drawable/food"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="214dp"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="68dp"
+                android:contentDescription="Scan"
+                android:src="@drawable/clothing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="214dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="292dp"
+                android:contentDescription="Scan"
+                android:src="@drawable/accessories"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="214dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="292dp"
+                android:contentDescription="Scan"
+                android:src="@drawable/fmcg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
